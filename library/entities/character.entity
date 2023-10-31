@@ -385,6 +385,18 @@
       }
     },
     {
+      "$id": "7274efdf-b26d-487c-b1a0-2477250d8ff2",
+      "layers": [
+        "a629fb3f-bcbd-4f84-a96c-d845a8b9f32a",
+        "294a15dc-1936-42a8-ad45-4b06b92a19b6",
+        "c24ada8e-abc2-46ef-89e7-a1f9eed391f8",
+        "f2254ec8-5cef-4c91-be4f-6e7c00314052"
+      ],
+      "name": "ledge_climb_in",
+      "pluginMetadata": {
+      }
+    },
+    {
       "$id": "082e6d87-eb0b-492b-bf4f-1d6051207b44",
       "layers": [
         "9944b10c-5adf-4316-b58c-d959b949200a",
@@ -1672,7 +1684,7 @@
     },
     {
       "$id": "f733a619-1fe2-4889-aafb-7fe46b46f5d8",
-      "code": "//TEAM FRAY NOTE - plays when you airdash into a floor.\r\n\r\n//calls a dust poof\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF}), self);\r\n//calls a separate dust poof behind the character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:\"behind\", animation: GlobalVfx.DUST_POOF_BACK}), self);\r\n\r\n//reduces waveland speed based on the provided arguments\r\nCommon.reduceWavelandSpeed(11, 0.9);",
+      "code": "//TEAM FRAY NOTE - plays when you airdash into a floor.\r\n\r\n//calls a dust poof\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF}), self);\r\n//calls a separate dust poof behind the character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:VfxLayer.CHARACTERS_BACK, animation: GlobalVfx.DUST_POOF_BACK}), self);\r\n\r\n//reduces waveland speed based on the provided arguments\r\nCommon.reduceWavelandSpeed(11, 0.9);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -2078,7 +2090,7 @@
     },
     {
       "$id": "13f9d709-3806-4974-b493-5781afb514ec",
-      "code": "//TEAM FRAY NOTE - animation which plays upon a successful parry.\r\n\r\n//calls parry effect\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry_ring\", x:6, y:21}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry_dust_front\", x:6, y:21}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry\", layer:\"behind\", x:6, y:21}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry_dust_back\", layer:\"behind\", x:6, y:21}), self);",
+      "code": "//TEAM FRAY NOTE - animation which plays upon a successful parry.\r\n\r\n//calls parry effect\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry_ring\", x:6, y:21}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry_dust_front\", x:6, y:21}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry\", layer:VfxLayer.CHARACTERS_BACK, x:6, y:21}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry_dust_back\", layer:VfxLayer.CHARACTERS_BACK, x:6, y:21}), self);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -8655,76 +8667,6 @@
       "type": "IMAGE"
     },
     {
-      "$id": "8f9d3df0-196f-48c1-b531-0dcbc16d5a54",
-      "length": 2,
-      "pluginMetadata": {
-      },
-      "symbol": "6a6ad130-571d-4ac8-9994-4dc2fad20209",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "66102ebb-f478-495f-8415-3fa92de5259b",
-      "length": 3,
-      "pluginMetadata": {
-      },
-      "symbol": "58501cc1-a1d3-4f92-9a19-c4652313f1e2",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "65f9916d-4f1b-41b6-9c67-07153387a04e",
-      "length": 3,
-      "pluginMetadata": {
-      },
-      "symbol": "e72c712a-304c-4ec3-a9d2-bd1ad129394e",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "32eedbe2-e2e8-4f0c-9ab0-4d54469bf86f",
-      "length": 3,
-      "pluginMetadata": {
-      },
-      "symbol": "67e2a290-2c65-48ac-ba63-6c297a6ad462",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "8de71af1-7e12-4650-8256-41988e018e9f",
-      "length": 3,
-      "pluginMetadata": {
-      },
-      "symbol": "08df5010-59eb-4d44-acdd-2376f733e445",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "195c61f4-d84d-4e28-82c5-af5021644ac8",
-      "length": 2,
-      "pluginMetadata": {
-      },
-      "symbol": "0f86fa9f-1e9e-4991-a71a-17e289682171",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "d1402e8b-ab77-4d8f-8bfb-bb8926839747",
-      "length": 1,
-      "pluginMetadata": {
-      },
-      "symbol": "d8b74425-443f-45cc-aec6-883c33d39599",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
       "$id": "2b39976f-d3b2-4865-9af0-121a3610403b",
       "length": 3,
       "pluginMetadata": {
@@ -8765,78 +8707,8 @@
       "type": "IMAGE"
     },
     {
-      "$id": "02ac46fb-af03-4f76-8abf-66d373019429",
-      "length": 2,
-      "pluginMetadata": {
-      },
-      "symbol": "6b82e56c-fecc-4658-ad6d-924f7eadcb13",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "62b5ece4-ce2e-437d-9203-deea7d61545d",
-      "length": 3,
-      "pluginMetadata": {
-      },
-      "symbol": "042154ba-3cf4-4629-9f00-481b33eec28b",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "f8813436-57a1-4ea5-8ffa-d41b23fe744e",
-      "length": 3,
-      "pluginMetadata": {
-      },
-      "symbol": "6b7ee8b7-9ab7-414b-ae6e-6799384c8726",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "9b91c369-8088-48aa-b4ef-4f3e4ddbec6c",
-      "length": 3,
-      "pluginMetadata": {
-      },
-      "symbol": "30191d8a-a7c6-4429-a7e7-6b4984367413",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "aaff747f-102f-4f7b-b070-2e076633cb51",
-      "length": 3,
-      "pluginMetadata": {
-      },
-      "symbol": "e8a8d581-bcb3-4320-aa85-5e6d0e46a2ea",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "18b8923c-8498-4052-96d1-705802f2d9b1",
-      "length": 2,
-      "pluginMetadata": {
-      },
-      "symbol": "b645ebd3-b5a0-45df-b3db-6c6d096fa2a4",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "48c75fc4-d91c-4553-9915-a5fb5eb68599",
-      "length": 1,
-      "pluginMetadata": {
-      },
-      "symbol": "83be7191-d966-4335-a39b-22cdcdd141a1",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
       "$id": "a0ef10ce-d1ba-48c4-80c5-83c39de8c38f",
-      "length": 20,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "cd2012f3-be85-41c6-be28-f7c86391435a",
@@ -9888,7 +9760,7 @@
     },
     {
       "$id": "e5acac69-5174-4763-9802-1ca9e3970b07",
-      "code": "//sets intangibility\r\nself.updateAnimationStats({bodyStatus:BodyStatus.INTANGIBLE});\r\n//calls a dust poof effect\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF}), self);\r\n//calls a dust poof effect behind the character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:\"behind\", animation: GlobalVfx.DUST_POOF_BACK}), self);\r\n",
+      "code": "//sets intangibility\r\nself.updateAnimationStats({bodyStatus:BodyStatus.INTANGIBLE});\r\n//calls a dust poof effect\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF}), self);\r\n//calls a dust poof effect behind the character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:VfxLayer.CHARACTERS_BACK, animation: GlobalVfx.DUST_POOF_BACK}), self);\r\n",
       "length": 1,
       "pluginMetadata": {
       },
@@ -14246,7 +14118,7 @@
     },
     {
       "$id": "5963cea5-9ee8-4390-bbe4-1b50bced3dec",
-      "code": "//plays dust poof effect in the front and back of the character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:\"behind\", animation: GlobalVfx.DUST_POOF_BACK}), self);",
+      "code": "//plays dust poof effect in the front and back of the character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:VfxLayer.CHARACTERS_BACK, animation: GlobalVfx.DUST_POOF_BACK}), self);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -27290,7 +27162,7 @@
     },
     {
       "$id": "ae732e31-757b-4b63-8e5f-472e677fc4e7",
-      "code": "//calls ground bounce effect\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.GROUND_BOUNCE}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:\"behind\", animation: GlobalVfx.GROUND_BOUNCE_BACK}), self);\r\n//forces enemy character into \"crash_bounce\" animation\r\nif (self.getGrabbedFoe().hasAnimation(\"crash_bounce\")) {\r\n    self.getGrabbedFoe().playAnimation(\"crash_bounce\");\r\n}",
+      "code": "//calls ground bounce effect\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.GROUND_BOUNCE}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:VfxLayer.CHARACTERS_BACK, animation: GlobalVfx.GROUND_BOUNCE_BACK}), self);\r\n//forces enemy character into \"crash_bounce\" animation\r\nif (self.getGrabbedFoe().hasAnimation(\"crash_bounce\")) {\r\n    self.getGrabbedFoe().playAnimation(\"crash_bounce\");\r\n}",
       "length": 1,
       "pluginMetadata": {
       },
@@ -29880,76 +29752,6 @@
       "pluginMetadata": {
       },
       "symbol": "337245cc-400b-4961-914d-03b2dd287ff8",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "COLLISION_BOX"
-    },
-    {
-      "$id": "04306674-2f0c-4cac-b82a-067b921840db",
-      "length": 2,
-      "pluginMetadata": {
-      },
-      "symbol": "ba1d15d0-8da7-403d-a638-ae3cc748d760",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "COLLISION_BOX"
-    },
-    {
-      "$id": "138d8ed2-78d2-44c6-a4a1-19023fc0ea01",
-      "length": 3,
-      "pluginMetadata": {
-      },
-      "symbol": "1c03606f-4fb5-4318-9e96-d99075045bbc",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "COLLISION_BOX"
-    },
-    {
-      "$id": "b1e1fa27-49e2-4e18-bfb0-6c60cd3ca863",
-      "length": 3,
-      "pluginMetadata": {
-      },
-      "symbol": "712e7ab5-fef2-4700-9244-f321010eafec",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "COLLISION_BOX"
-    },
-    {
-      "$id": "343f3137-df4b-4963-ab9a-73d9d427ae64",
-      "length": 3,
-      "pluginMetadata": {
-      },
-      "symbol": "398a5787-ffbc-4862-bcd7-c76ae049e6ee",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "COLLISION_BOX"
-    },
-    {
-      "$id": "f2b17de2-caeb-4193-8419-a7372c6a4a30",
-      "length": 3,
-      "pluginMetadata": {
-      },
-      "symbol": "dc6d6a76-2997-4b7c-846f-df2c2408415d",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "COLLISION_BOX"
-    },
-    {
-      "$id": "5f4e631c-53c2-4220-b769-b09ad47b8ec7",
-      "length": 2,
-      "pluginMetadata": {
-      },
-      "symbol": "3abe62a5-8040-4ec0-8e29-7625aefc4369",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "COLLISION_BOX"
-    },
-    {
-      "$id": "8a47502a-f3fe-45e2-919c-55ad68b656e4",
-      "length": 1,
-      "pluginMetadata": {
-      },
-      "symbol": "bab8d7d2-8fd7-4889-b95d-5beb4f3ca7eb",
       "tweenType": "LINEAR",
       "tweened": false,
       "type": "COLLISION_BOX"
@@ -36469,23 +36271,7 @@
     {
       "$id": "21e72b37-cc04-4c99-8515-a0a2a9b0e455",
       "code": "",
-      "length": 24,
-      "pluginMetadata": {
-      },
-      "type": "FRAME_SCRIPT"
-    },
-    {
-      "$id": "820688e5-e459-459f-a26d-519492ca39be",
-      "code": "//removes the previously set intangibility \r\nself.updateAnimationStats({bodyStatus:BodyStatus.NONE});\r\n",
-      "length": 1,
-      "pluginMetadata": {
-      },
-      "type": "FRAME_SCRIPT"
-    },
-    {
-      "$id": "380bd750-6279-4249-9021-7405d8f004d9",
-      "code": "",
-      "length": 1,
+      "length": 14,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -36820,7 +36606,7 @@
     },
     {
       "$id": "e7bd8f83-f679-42b1-ac2c-6442c0717cfa",
-      "code": "//plays generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_2);\r\n//calls a light sparkle effect\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.SPARKLE_LIGHT, x: 8, y: -170}), self);\r\n//calls dust poof in the front and back of the character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:\"behind\", animation: GlobalVfx.DUST_POOF_BACK}), self);\r\n//plays a randomized attack voice sound from the character's attackVoiceIds character stat. Delete the \"//\"s from the line below to activate.\r\n//self.playAttackVoice();",
+      "code": "//plays generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_2);\r\n//calls a light sparkle effect\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.SPARKLE_LIGHT, x: 8, y: -170}), self);\r\n//calls dust poof in the front and back of the character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:VfxLayer.CHARACTERS_BACK, animation: GlobalVfx.DUST_POOF_BACK}), self);\r\n//plays a randomized attack voice sound from the character's attackVoiceIds character stat. Delete the \"//\"s from the line below to activate.\r\n//self.playAttackVoice();",
       "length": 1,
       "pluginMetadata": {
       },
@@ -36836,7 +36622,7 @@
     },
     {
       "$id": "323ade56-b32b-43d9-b045-ba4b75f77d28",
-      "code": "//calls dust poof in front and behind the character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:\"behind\", animation: GlobalVfx.DUST_POOF_BACK}), self);",
+      "code": "//calls dust poof in front and behind the character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:VfxLayer.CHARACTERS_BACK, animation: GlobalVfx.DUST_POOF_BACK}), self);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -36900,7 +36686,7 @@
     },
     {
       "$id": "24b57c7a-9f09-4c5e-bcce-157645f97bad",
-      "code": "//calls a dust poof effect in front and behind your character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF, x: 10}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:\"behind\", animation: GlobalVfx.DUST_POOF_BACK, x: 10}), self);",
+      "code": "//calls a dust poof effect in front and behind your character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF, x: 10}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:VfxLayer.CHARACTERS_BACK, animation: GlobalVfx.DUST_POOF_BACK, x: 10}), self);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -36916,7 +36702,7 @@
     },
     {
       "$id": "027bd9e1-b719-46fb-9162-e181101918b5",
-      "code": "//calls a dust poof effect in front and behind your character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF, x: -10}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:\"behind\", animation: GlobalVfx.DUST_POOF_BACK, x: -10}), self);",
+      "code": "//calls a dust poof effect in front and behind your character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF, x: -10}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:VfxLayer.CHARACTERS_BACK, animation: GlobalVfx.DUST_POOF_BACK, x: -10}), self);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -36980,7 +36766,7 @@
     },
     {
       "$id": "459323bc-5606-4ef0-8f2f-7d92234a45c8",
-      "code": "//plays generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);\r\n//calls dust effects\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_SPIN}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_SPIN_BACK, layer:\"behind\"}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_START_LIGHT}), self);",
+      "code": "//plays generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);\r\n//calls dust effects\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_SPIN}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_SPIN_BACK, layer:VfxLayer.CHARACTERS_BACK}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_START_LIGHT}), self);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -37170,7 +36956,7 @@
     },
     {
       "$id": "e24090e8-e6d1-4023-9ee3-064fa8a2776a",
-      "code": "//TEAM FRAY NOTE - this animation loops as long as you have the special button held. Once you release the special button, you instantly switch to the \"special_down_endlag\" animation.\r\n\r\n//plays a spinning dust effect in front and behind your character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_SPIN}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_SPIN_BACK, layer:\"behind\"}), self);",
+      "code": "//TEAM FRAY NOTE - this animation loops as long as you have the special button held. Once you release the special button, you instantly switch to the \"special_down_endlag\" animation.\r\n\r\n//plays a spinning dust effect in front and behind your character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_SPIN}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_SPIN_BACK, layer:VfxLayer.CHARACTERS_BACK}), self);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -41884,7 +41670,7 @@
     },
     {
       "$id": "ae43d826-74c6-486f-8987-40fa55e252b8",
-      "code": "//TEAM FRAY NOTE - for Fraymakers parity, parry is a 3 frame window, so this animation should be 3 frames long.\r\n\r\n//plays an effect that indicates how long the parry window is.\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry_in\", layer:\"behind\", x:6, y:21}), self);",
+      "code": "//TEAM FRAY NOTE - for Fraymakers parity, parry is a 3 frame window, so this animation should be 3 frames long.\r\n\r\n//plays an effect that indicates how long the parry window is.\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry_in\", layer:VfxLayer.CHARACTERS_BACK, x:6, y:21}), self);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -42436,7 +42222,7 @@
     },
     {
       "$id": "b63106ed-28fe-49a6-acbd-8e5bfb1bc6c2",
-      "code": "//calls dust poof in front and behind the character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:\"behind\", animation: GlobalVfx.DUST_POOF_BACK}), self);",
+      "code": "//calls dust poof in front and behind the character\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_POOF}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", layer:VfxLayer.CHARACTERS_BACK, animation: GlobalVfx.DUST_POOF_BACK}), self);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -43182,6 +42968,248 @@
       "$id": "b323933d-0d17-4c06-9b95-20ed84035bec",
       "code": "",
       "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "3c4b2a14-2578-458d-8e71-b50870d21d51",
+      "length": 2,
+      "pluginMetadata": {
+      },
+      "symbol": "e3230d21-5986-42a7-a9c4-c950424a87e1",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "b4373f8f-020c-4987-9081-b18f126ec9d3",
+      "length": 3,
+      "pluginMetadata": {
+      },
+      "symbol": "c1bee64a-92cb-47f8-b05e-8cfc34cfe570",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "0e766dcd-5afb-4b6e-b662-8a8eeec64ae0",
+      "length": 3,
+      "pluginMetadata": {
+      },
+      "symbol": "e8c9759a-9754-4dbf-a7ac-3b9827f73e21",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "e4625989-258e-4b70-a770-1cb22eb4bb69",
+      "length": 3,
+      "pluginMetadata": {
+      },
+      "symbol": "bc127171-1041-49d2-a8f7-a0a5cd557969",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "b28d04ec-b53d-4173-bb7d-c5cc16ff34c4",
+      "length": 3,
+      "pluginMetadata": {
+      },
+      "symbol": "b9c27faf-f007-4e30-9249-6d628ad0de43",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "fd56b298-bbce-4830-aa2a-4f11600a1057",
+      "length": 2,
+      "pluginMetadata": {
+      },
+      "symbol": "2c1bbe5f-804b-4a6a-be66-b0d4c85fb363",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "78496164-0abd-42b8-aa69-b95bed117b53",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": "2ea3ae71-f56d-485e-ab1c-558e57a73dce",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "b257ea64-b1da-4289-a00e-a9e2c44c72d7",
+      "length": 2,
+      "pluginMetadata": {
+      },
+      "symbol": "46951e42-f77b-4acc-a36f-6fc718a9408f",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "44488631-ec7c-44ff-a7e0-b68f609cb40f",
+      "length": 3,
+      "pluginMetadata": {
+      },
+      "symbol": "8ab12b37-ad55-4fbd-a63a-e7aa228be3ce",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "55bc9451-e17e-4542-9ac4-40a39ef452cd",
+      "length": 3,
+      "pluginMetadata": {
+      },
+      "symbol": "b2d7c589-2d46-4049-898c-e0a73f10c174",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "129f15bf-499a-4c4a-944d-1c4bab7d7f76",
+      "length": 3,
+      "pluginMetadata": {
+      },
+      "symbol": "29e74941-7725-4d3d-9df6-703750e31f10",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "4c91d5bb-69d3-4b1d-a9c8-ca06200ef47a",
+      "length": 3,
+      "pluginMetadata": {
+      },
+      "symbol": "37f9deea-cabd-4206-bfbd-c31e70491236",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "9136205e-6d66-48ff-9357-e5dfc566116c",
+      "length": 2,
+      "pluginMetadata": {
+      },
+      "symbol": "f7c4596d-8081-4e87-afe2-11b34d902bc3",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "d857cdf2-e05a-4173-8a23-228fdb288ca4",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": "d988e828-eff2-4803-a1c5-36b8770fe049",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "557d73e1-7f5c-40bd-bd3b-e27e105539aa",
+      "code": "//removes the previously set intangibility \r\nself.updateAnimationStats({bodyStatus:BodyStatus.NONE});\r\n",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "a7ae6fb2-049d-4f95-940c-6815995b8b6f",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "93467077-fb8d-4e6e-af90-b62ff35903d2",
+      "length": 2,
+      "pluginMetadata": {
+      },
+      "symbol": "8b976c92-8420-4747-a372-1604d38e1ec2",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "COLLISION_BOX"
+    },
+    {
+      "$id": "c826a541-dd69-488e-9509-23b2386591e0",
+      "length": 3,
+      "pluginMetadata": {
+      },
+      "symbol": "bcc3f3d3-d9d6-4ba1-b248-371df208c50a",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "COLLISION_BOX"
+    },
+    {
+      "$id": "a3215fba-ae5d-47d3-bd0c-5546b58465cc",
+      "length": 3,
+      "pluginMetadata": {
+      },
+      "symbol": "c2c38c7a-0d11-4e77-b633-2f8ede798d86",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "COLLISION_BOX"
+    },
+    {
+      "$id": "5b434aef-f045-4092-b293-33f2799bc93c",
+      "length": 3,
+      "pluginMetadata": {
+      },
+      "symbol": "6d892360-d640-41e8-aefe-a2fce567b59b",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "COLLISION_BOX"
+    },
+    {
+      "$id": "ba7ed479-8efb-4f7a-a365-5dbb783c7737",
+      "length": 3,
+      "pluginMetadata": {
+      },
+      "symbol": "5d8d8d69-007d-45cd-95fb-cb754e96377e",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "COLLISION_BOX"
+    },
+    {
+      "$id": "914cd334-117d-4446-91a0-af7d68ecb8e6",
+      "length": 2,
+      "pluginMetadata": {
+      },
+      "symbol": "4ba7c0f2-c8aa-4231-a9e2-d645c20187e6",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "COLLISION_BOX"
+    },
+    {
+      "$id": "e3f163ac-09d2-4628-b98b-b23b8a84f6d0",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": "f681d99c-c13a-40f6-afe8-77379bfd1cea",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "COLLISION_BOX"
+    },
+    {
+      "$id": "43364f8d-9fb1-467f-9294-02de5030f024",
+      "code": "//sets intangibility\r\nself.updateAnimationStats({bodyStatus:BodyStatus.INTANGIBLE});\r\n\r\n",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "7191f151-0560-4de2-b9ae-3e32a6fda7ec",
+      "code": "",
+      "length": 9,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -44008,9 +44036,7 @@
       "hidden": false,
       "keyframes": [
         "58e2ae23-ab23-415a-ab9d-8a201530cca1",
-        "21e72b37-cc04-4c99-8515-a0a2a9b0e455",
-        "820688e5-e459-459f-a26d-519492ca39be",
-        "380bd750-6279-4249-9021-7405d8f004d9"
+        "21e72b37-cc04-4c99-8515-a0a2a9b0e455"
       ],
       "language": "hscript",
       "locked": false,
@@ -48180,14 +48206,7 @@
         "2b39976f-d3b2-4865-9af0-121a3610403b",
         "4c32e485-71aa-4d1f-a856-53055bec0caf",
         "7296f520-cd44-4573-b932-bcfa506db525",
-        "a9e63838-8a51-4bc4-ba7d-207fe9b4e1e2",
-        "02ac46fb-af03-4f76-8abf-66d373019429",
-        "62b5ece4-ce2e-437d-9203-deea7d61545d",
-        "f8813436-57a1-4ea5-8ffa-d41b23fe744e",
-        "9b91c369-8088-48aa-b4ef-4f3e4ddbec6c",
-        "aaff747f-102f-4f7b-b070-2e076633cb51",
-        "18b8923c-8498-4052-96d1-705802f2d9b1",
-        "48c75fc4-d91c-4553-9915-a5fb5eb68599"
+        "a9e63838-8a51-4bc4-ba7d-207fe9b4e1e2"
       ],
       "locked": false,
       "name": "Image Layer",
@@ -48203,14 +48222,7 @@
         "84e7f7b7-28fd-4c57-b6f5-b6f8757f8178",
         "c5f80f9f-8abe-4351-af42-8eac1f35ea65",
         "e631eee1-d4da-4866-9e78-ae1da604843b",
-        "25a5ca3c-376b-4cda-ae4c-122f4b3c7681",
-        "8f9d3df0-196f-48c1-b531-0dcbc16d5a54",
-        "66102ebb-f478-495f-8415-3fa92de5259b",
-        "65f9916d-4f1b-41b6-9c67-07153387a04e",
-        "32eedbe2-e2e8-4f0c-9ab0-4d54469bf86f",
-        "8de71af1-7e12-4650-8256-41988e018e9f",
-        "195c61f4-d84d-4e28-82c5-af5021644ac8",
-        "d1402e8b-ab77-4d8f-8bfb-bb8926839747"
+        "25a5ca3c-376b-4cda-ae4c-122f4b3c7681"
       ],
       "locked": true,
       "name": "Image Layer",
@@ -52134,14 +52146,7 @@
         "792e0282-aa40-4b67-ba64-e8c9cb1f8511",
         "f2bb0636-6dc6-45b0-a01c-39ef5dfc5b18",
         "83a34592-072a-49a6-9372-f168b38e7f38",
-        "c2d2b1b2-681d-48c8-aa36-abfccc07d00c",
-        "04306674-2f0c-4cac-b82a-067b921840db",
-        "138d8ed2-78d2-44c6-a4a1-19023fc0ea01",
-        "b1e1fa27-49e2-4e18-bfb0-6c60cd3ca863",
-        "343f3137-df4b-4963-ab9a-73d9d427ae64",
-        "f2b17de2-caeb-4193-8419-a7372c6a4a30",
-        "5f4e631c-53c2-4220-b769-b09ad47b8ec7",
-        "8a47502a-f3fe-45e2-919c-55ad68b656e4"
+        "c2d2b1b2-681d-48c8-aa36-abfccc07d00c"
       ],
       "locked": false,
       "name": "hurtbox0",
@@ -55652,6 +55657,82 @@
       "pluginMetadata": {
       },
       "type": "IMAGE"
+    },
+    {
+      "$id": "a629fb3f-bcbd-4f84-a96c-d845a8b9f32a",
+      "hidden": false,
+      "keyframes": [
+        "3c4b2a14-2578-458d-8e71-b50870d21d51",
+        "b4373f8f-020c-4987-9081-b18f126ec9d3",
+        "0e766dcd-5afb-4b6e-b662-8a8eeec64ae0",
+        "e4625989-258e-4b70-a770-1cb22eb4bb69",
+        "b28d04ec-b53d-4173-bb7d-c5cc16ff34c4",
+        "fd56b298-bbce-4830-aa2a-4f11600a1057",
+        "78496164-0abd-42b8-aa69-b95bed117b53"
+      ],
+      "locked": true,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "294a15dc-1936-42a8-ad45-4b06b92a19b6",
+      "hidden": false,
+      "keyframes": [
+        "b257ea64-b1da-4289-a00e-a9e2c44c72d7",
+        "44488631-ec7c-44ff-a7e0-b68f609cb40f",
+        "55bc9451-e17e-4542-9ac4-40a39ef452cd",
+        "129f15bf-499a-4c4a-944d-1c4bab7d7f76",
+        "4c91d5bb-69d3-4b1d-a9c8-ca06200ef47a",
+        "9136205e-6d66-48ff-9357-e5dfc566116c",
+        "d857cdf2-e05a-4173-8a23-228fdb288ca4"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "c24ada8e-abc2-46ef-89e7-a1f9eed391f8",
+      "hidden": false,
+      "keyframes": [
+        "43364f8d-9fb1-467f-9294-02de5030f024",
+        "7191f151-0560-4de2-b9ae-3e32a6fda7ec",
+        "557d73e1-7f5c-40bd-bd3b-e27e105539aa",
+        "a7ae6fb2-049d-4f95-940c-6815995b8b6f"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "f2254ec8-5cef-4c91-be4f-6e7c00314052",
+      "defaultAlpha": 0.5,
+      "defaultColor": "0x000000",
+      "hidden": false,
+      "keyframes": [
+        "93467077-fb8d-4e6e-af90-b62ff35903d2",
+        "c826a541-dd69-488e-9509-23b2386591e0",
+        "a3215fba-ae5d-47d3-bd0c-5546b58465cc",
+        "5b434aef-f045-4092-b293-33f2799bc93c",
+        "ba7ed479-8efb-4f7a-a365-5dbb783c7737",
+        "914cd334-117d-4446-91a0-af7d68ecb8e6",
+        "e3f163ac-09d2-4628-b98b-b23b8a84f6d0"
+      ],
+      "locked": false,
+      "name": "hurtbox0",
+      "pluginMetadata": {
+        "com.fraymakers.FraymakersMetadata": {
+          "collisionBoxType": "HURT_BOX",
+          "index": 0
+        }
+      },
+      "type": "COLLISION_BOX"
     }
   ],
   "paletteMap": {
@@ -55661,7 +55742,7 @@
   "pluginMetadata": {
     "com.fraymakers.FraymakersMetadata": {
       "objectType": "CHARACTER",
-      "version": "0.2.0"
+      "version": "0.3.0"
     }
   },
   "plugins": [
@@ -64431,111 +64512,6 @@
       "y": -28
     },
     {
-      "$id": "6a6ad130-571d-4ac8-9994-4dc2fad20209",
-      "alpha": 1,
-      "imageAsset": "dec0124e-42f1-4378-9b0b-ef211e476828",
-      "pivotX": 26,
-      "pivotY": 86,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 1,
-      "scaleY": 0.33,
-      "type": "IMAGE",
-      "x": -25.672812564024948,
-      "y": -28.286936723079723
-    },
-    {
-      "$id": "58501cc1-a1d3-4f92-9a19-c4652313f1e2",
-      "alpha": 1,
-      "imageAsset": "dec0124e-42f1-4378-9b0b-ef211e476828",
-      "pivotX": 26,
-      "pivotY": 86,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 1.07,
-      "scaleY": 0.29,
-      "type": "IMAGE",
-      "x": -28,
-      "y": -25
-    },
-    {
-      "$id": "e72c712a-304c-4ec3-a9d2-bd1ad129394e",
-      "alpha": 1,
-      "imageAsset": "dec0124e-42f1-4378-9b0b-ef211e476828",
-      "pivotX": 26,
-      "pivotY": 86,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 1.03,
-      "scaleY": 0.46,
-      "type": "IMAGE",
-      "x": -27,
-      "y": -40
-    },
-    {
-      "$id": "67e2a290-2c65-48ac-ba63-6c297a6ad462",
-      "alpha": 1,
-      "imageAsset": "dec0124e-42f1-4378-9b0b-ef211e476828",
-      "pivotX": 26,
-      "pivotY": 86,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 1.02,
-      "scaleY": 0.68,
-      "type": "IMAGE",
-      "x": -27,
-      "y": -59
-    },
-    {
-      "$id": "08df5010-59eb-4d44-acdd-2376f733e445",
-      "alpha": 1,
-      "imageAsset": "dec0124e-42f1-4378-9b0b-ef211e476828",
-      "pivotX": 26,
-      "pivotY": 86,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 0.99,
-      "scaleY": 0.89,
-      "type": "IMAGE",
-      "x": -26,
-      "y": -77
-    },
-    {
-      "$id": "0f86fa9f-1e9e-4991-a71a-17e289682171",
-      "alpha": 1,
-      "imageAsset": "dec0124e-42f1-4378-9b0b-ef211e476828",
-      "pivotX": 26,
-      "pivotY": 86,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 0.99,
-      "scaleY": 1.1,
-      "type": "IMAGE",
-      "x": -26,
-      "y": -94
-    },
-    {
-      "$id": "d8b74425-443f-45cc-aec6-883c33d39599",
-      "alpha": 1,
-      "imageAsset": "dec0124e-42f1-4378-9b0b-ef211e476828",
-      "pivotX": 26,
-      "pivotY": 86,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 0.99,
-      "scaleY": 1.05,
-      "type": "IMAGE",
-      "x": -26,
-      "y": -90
-    },
-    {
       "$id": "7354c4d0-8b2d-4dcb-8c8b-d6091caf5aa5",
       "alpha": 1,
       "imageAsset": "6a6178c5-24d3-4bb1-aa3e-3fdf85aa0ae4",
@@ -64594,111 +64570,6 @@
       "type": "IMAGE",
       "x": -37,
       "y": -32
-    },
-    {
-      "$id": "6b82e56c-fecc-4658-ad6d-924f7eadcb13",
-      "alpha": 1,
-      "imageAsset": "6a6178c5-24d3-4bb1-aa3e-3fdf85aa0ae4",
-      "pivotX": 26,
-      "pivotY": 86,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 1,
-      "scaleY": 0.55,
-      "type": "IMAGE",
-      "x": -24,
-      "y": -33
-    },
-    {
-      "$id": "042154ba-3cf4-4629-9f00-481b33eec28b",
-      "alpha": 1,
-      "imageAsset": "6a6178c5-24d3-4bb1-aa3e-3fdf85aa0ae4",
-      "pivotX": 26,
-      "pivotY": 86,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 1.1,
-      "scaleY": 0.47,
-      "type": "IMAGE",
-      "x": -27,
-      "y": -28
-    },
-    {
-      "$id": "6b7ee8b7-9ab7-414b-ae6e-6799384c8726",
-      "alpha": 1,
-      "imageAsset": "6a6178c5-24d3-4bb1-aa3e-3fdf85aa0ae4",
-      "pivotX": 26,
-      "pivotY": 86,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 1.05,
-      "scaleY": 0.67,
-      "type": "IMAGE",
-      "x": -26,
-      "y": -45
-    },
-    {
-      "$id": "30191d8a-a7c6-4429-a7e7-6b4984367413",
-      "alpha": 1,
-      "imageAsset": "6a6178c5-24d3-4bb1-aa3e-3fdf85aa0ae4",
-      "pivotX": 26,
-      "pivotY": 86,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 1,
-      "scaleY": 0.8,
-      "type": "IMAGE",
-      "x": -25,
-      "y": -61
-    },
-    {
-      "$id": "e8a8d581-bcb3-4320-aa85-5e6d0e46a2ea",
-      "alpha": 1,
-      "imageAsset": "6a6178c5-24d3-4bb1-aa3e-3fdf85aa0ae4",
-      "pivotX": 26,
-      "pivotY": 86,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 1,
-      "scaleY": 0.9,
-      "type": "IMAGE",
-      "x": -26,
-      "y": -77
-    },
-    {
-      "$id": "b645ebd3-b5a0-45df-b3db-6c6d096fa2a4",
-      "alpha": 1,
-      "imageAsset": "6a6178c5-24d3-4bb1-aa3e-3fdf85aa0ae4",
-      "pivotX": 26,
-      "pivotY": 86,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 1,
-      "scaleY": 1,
-      "type": "IMAGE",
-      "x": -25,
-      "y": -99
-    },
-    {
-      "$id": "83be7191-d966-4335-a39b-22cdcdd141a1",
-      "alpha": 1,
-      "imageAsset": "6a6178c5-24d3-4bb1-aa3e-3fdf85aa0ae4",
-      "pivotX": 26,
-      "pivotY": 86,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 1,
-      "scaleY": 1,
-      "type": "IMAGE",
-      "x": -26,
-      "y": -90
     },
     {
       "$id": "cd2012f3-be85-41c6-be28-f7c86391435a",
@@ -91117,111 +90988,6 @@
       "y": -31.55758016095041
     },
     {
-      "$id": "ba1d15d0-8da7-403d-a638-ae3cc748d760",
-      "alpha": 0.5,
-      "color": "0xfcba03",
-      "pivotX": 25.5,
-      "pivotY": 14,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 51,
-      "scaleY": 28,
-      "type": "COLLISION_BOX",
-      "x": -25.672812564024948,
-      "y": -28
-    },
-    {
-      "$id": "1c03606f-4fb5-4318-9e96-d99075045bbc",
-      "alpha": 0.5,
-      "color": "0xfcba03",
-      "pivotX": 27.5,
-      "pivotY": 12.5,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 55,
-      "scaleY": 25,
-      "type": "COLLISION_BOX",
-      "x": -28,
-      "y": -25
-    },
-    {
-      "$id": "712e7ab5-fef2-4700-9244-f321010eafec",
-      "alpha": 0.5,
-      "color": "0xfcba03",
-      "pivotX": 26.5,
-      "pivotY": 20,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 53,
-      "scaleY": 40,
-      "type": "COLLISION_BOX",
-      "x": -27,
-      "y": -40
-    },
-    {
-      "$id": "398a5787-ffbc-4862-bcd7-c76ae049e6ee",
-      "alpha": 0.5,
-      "color": "0xfcba03",
-      "pivotX": 26,
-      "pivotY": 29,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 52,
-      "scaleY": 58,
-      "type": "COLLISION_BOX",
-      "x": -27,
-      "y": -59
-    },
-    {
-      "$id": "dc6d6a76-2997-4b7c-846f-df2c2408415d",
-      "alpha": 0.5,
-      "color": "0xfcba03",
-      "pivotX": 25,
-      "pivotY": 38.5,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 50,
-      "scaleY": 77,
-      "type": "COLLISION_BOX",
-      "x": -26,
-      "y": -77
-    },
-    {
-      "$id": "3abe62a5-8040-4ec0-8e29-7625aefc4369",
-      "alpha": 0.5,
-      "color": "0xfcba03",
-      "pivotX": 25,
-      "pivotY": 47.5,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 50,
-      "scaleY": 95,
-      "type": "COLLISION_BOX",
-      "x": -26,
-      "y": -94
-    },
-    {
-      "$id": "bab8d7d2-8fd7-4889-b95d-5beb4f3ca7eb",
-      "alpha": 0.5,
-      "color": "0xfcba03",
-      "pivotX": 25,
-      "pivotY": 45,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 50,
-      "scaleY": 90,
-      "type": "COLLISION_BOX",
-      "x": -26,
-      "y": -90
-    },
-    {
       "$id": "8a54a88e-2a71-4b39-8e20-a01763e8efe3",
       "alpha": 0.5,
       "color": "0xfcba03",
@@ -106816,6 +106582,321 @@
       "type": "IMAGE",
       "x": -19,
       "y": -86
+    },
+    {
+      "$id": "e3230d21-5986-42a7-a9c4-c950424a87e1",
+      "alpha": 1,
+      "imageAsset": "dec0124e-42f1-4378-9b0b-ef211e476828",
+      "pivotX": 26,
+      "pivotY": 86,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 0.33,
+      "type": "IMAGE",
+      "x": -25.672812564024948,
+      "y": -28.286936723079723
+    },
+    {
+      "$id": "c1bee64a-92cb-47f8-b05e-8cfc34cfe570",
+      "alpha": 1,
+      "imageAsset": "dec0124e-42f1-4378-9b0b-ef211e476828",
+      "pivotX": 26,
+      "pivotY": 86,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1.07,
+      "scaleY": 0.29,
+      "type": "IMAGE",
+      "x": -28,
+      "y": -25
+    },
+    {
+      "$id": "e8c9759a-9754-4dbf-a7ac-3b9827f73e21",
+      "alpha": 1,
+      "imageAsset": "dec0124e-42f1-4378-9b0b-ef211e476828",
+      "pivotX": 26,
+      "pivotY": 86,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1.03,
+      "scaleY": 0.46,
+      "type": "IMAGE",
+      "x": -27,
+      "y": -40
+    },
+    {
+      "$id": "bc127171-1041-49d2-a8f7-a0a5cd557969",
+      "alpha": 1,
+      "imageAsset": "dec0124e-42f1-4378-9b0b-ef211e476828",
+      "pivotX": 26,
+      "pivotY": 86,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1.02,
+      "scaleY": 0.68,
+      "type": "IMAGE",
+      "x": -27,
+      "y": -59
+    },
+    {
+      "$id": "b9c27faf-f007-4e30-9249-6d628ad0de43",
+      "alpha": 1,
+      "imageAsset": "dec0124e-42f1-4378-9b0b-ef211e476828",
+      "pivotX": 26,
+      "pivotY": 86,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 0.99,
+      "scaleY": 0.89,
+      "type": "IMAGE",
+      "x": -26,
+      "y": -77
+    },
+    {
+      "$id": "2c1bbe5f-804b-4a6a-be66-b0d4c85fb363",
+      "alpha": 1,
+      "imageAsset": "dec0124e-42f1-4378-9b0b-ef211e476828",
+      "pivotX": 26,
+      "pivotY": 86,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 0.99,
+      "scaleY": 1.1,
+      "type": "IMAGE",
+      "x": -26,
+      "y": -94
+    },
+    {
+      "$id": "2ea3ae71-f56d-485e-ab1c-558e57a73dce",
+      "alpha": 1,
+      "imageAsset": "dec0124e-42f1-4378-9b0b-ef211e476828",
+      "pivotX": 26,
+      "pivotY": 86,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 0.99,
+      "scaleY": 1.05,
+      "type": "IMAGE",
+      "x": -26,
+      "y": -90
+    },
+    {
+      "$id": "46951e42-f77b-4acc-a36f-6fc718a9408f",
+      "alpha": 1,
+      "imageAsset": "6a6178c5-24d3-4bb1-aa3e-3fdf85aa0ae4",
+      "pivotX": 26,
+      "pivotY": 86,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 0.55,
+      "type": "IMAGE",
+      "x": -24,
+      "y": -33
+    },
+    {
+      "$id": "8ab12b37-ad55-4fbd-a63a-e7aa228be3ce",
+      "alpha": 1,
+      "imageAsset": "6a6178c5-24d3-4bb1-aa3e-3fdf85aa0ae4",
+      "pivotX": 26,
+      "pivotY": 86,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1.1,
+      "scaleY": 0.47,
+      "type": "IMAGE",
+      "x": -27,
+      "y": -28
+    },
+    {
+      "$id": "b2d7c589-2d46-4049-898c-e0a73f10c174",
+      "alpha": 1,
+      "imageAsset": "6a6178c5-24d3-4bb1-aa3e-3fdf85aa0ae4",
+      "pivotX": 26,
+      "pivotY": 86,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1.05,
+      "scaleY": 0.67,
+      "type": "IMAGE",
+      "x": -26,
+      "y": -45
+    },
+    {
+      "$id": "29e74941-7725-4d3d-9df6-703750e31f10",
+      "alpha": 1,
+      "imageAsset": "6a6178c5-24d3-4bb1-aa3e-3fdf85aa0ae4",
+      "pivotX": 26,
+      "pivotY": 86,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 0.8,
+      "type": "IMAGE",
+      "x": -25,
+      "y": -61
+    },
+    {
+      "$id": "37f9deea-cabd-4206-bfbd-c31e70491236",
+      "alpha": 1,
+      "imageAsset": "6a6178c5-24d3-4bb1-aa3e-3fdf85aa0ae4",
+      "pivotX": 26,
+      "pivotY": 86,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 0.9,
+      "type": "IMAGE",
+      "x": -26,
+      "y": -77
+    },
+    {
+      "$id": "f7c4596d-8081-4e87-afe2-11b34d902bc3",
+      "alpha": 1,
+      "imageAsset": "6a6178c5-24d3-4bb1-aa3e-3fdf85aa0ae4",
+      "pivotX": 26,
+      "pivotY": 86,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "type": "IMAGE",
+      "x": -25,
+      "y": -99
+    },
+    {
+      "$id": "d988e828-eff2-4803-a1c5-36b8770fe049",
+      "alpha": 1,
+      "imageAsset": "6a6178c5-24d3-4bb1-aa3e-3fdf85aa0ae4",
+      "pivotX": 26,
+      "pivotY": 86,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "type": "IMAGE",
+      "x": -26,
+      "y": -90
+    },
+    {
+      "$id": "8b976c92-8420-4747-a372-1604d38e1ec2",
+      "alpha": 0.5,
+      "color": "0xfcba03",
+      "pivotX": 25.5,
+      "pivotY": 14,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 51,
+      "scaleY": 28,
+      "type": "COLLISION_BOX",
+      "x": -25.672812564024948,
+      "y": -28
+    },
+    {
+      "$id": "bcc3f3d3-d9d6-4ba1-b248-371df208c50a",
+      "alpha": 0.5,
+      "color": "0xfcba03",
+      "pivotX": 27.5,
+      "pivotY": 12.5,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 55,
+      "scaleY": 25,
+      "type": "COLLISION_BOX",
+      "x": -28,
+      "y": -25
+    },
+    {
+      "$id": "c2c38c7a-0d11-4e77-b633-2f8ede798d86",
+      "alpha": 0.5,
+      "color": "0xfcba03",
+      "pivotX": 26.5,
+      "pivotY": 20,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 53,
+      "scaleY": 40,
+      "type": "COLLISION_BOX",
+      "x": -27,
+      "y": -40
+    },
+    {
+      "$id": "6d892360-d640-41e8-aefe-a2fce567b59b",
+      "alpha": 0.5,
+      "color": "0xfcba03",
+      "pivotX": 26,
+      "pivotY": 29,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 52,
+      "scaleY": 58,
+      "type": "COLLISION_BOX",
+      "x": -27,
+      "y": -59
+    },
+    {
+      "$id": "5d8d8d69-007d-45cd-95fb-cb754e96377e",
+      "alpha": 0.5,
+      "color": "0xfcba03",
+      "pivotX": 25,
+      "pivotY": 38.5,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 50,
+      "scaleY": 77,
+      "type": "COLLISION_BOX",
+      "x": -26,
+      "y": -77
+    },
+    {
+      "$id": "4ba7c0f2-c8aa-4231-a9e2-d645c20187e6",
+      "alpha": 0.5,
+      "color": "0xfcba03",
+      "pivotX": 25,
+      "pivotY": 47.5,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 50,
+      "scaleY": 95,
+      "type": "COLLISION_BOX",
+      "x": -26,
+      "y": -94
+    },
+    {
+      "$id": "f681d99c-c13a-40f6-afe8-77379bfd1cea",
+      "alpha": 0.5,
+      "color": "0xfcba03",
+      "pivotX": 25,
+      "pivotY": 45,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 50,
+      "scaleY": 90,
+      "type": "COLLISION_BOX",
+      "x": -26,
+      "y": -90
     }
   ],
   "tags": [
