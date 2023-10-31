@@ -124,9 +124,14 @@
 	//LEDGE
 	ledge_in: {},
 	ledge_loop: {},
+	ledge_roll_in: {},
 	ledge_roll: {},
+	ledge_climb_in: {},
 	ledge_climb: {},
+	ledge_attack_in: {},
 	ledge_attack: {},
+	ledge_jump_in: {},
+	ledge_jump: {},
 
 	//MISC
 	revival: {},
