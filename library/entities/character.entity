@@ -2090,7 +2090,7 @@
     },
     {
       "$id": "13f9d709-3806-4974-b493-5781afb514ec",
-      "code": "//TEAM FRAY NOTE - animation which plays upon a successful parry.\r\n\r\n//calls parry effect\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry_ring\", x:6, y:21}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry_dust_front\", x:6, y:21}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry\", layer:VfxLayer.CHARACTERS_BACK, x:6, y:21}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry_dust_back\", layer:VfxLayer.CHARACTERS_BACK, x:6, y:21}), self);",
+      "code": "//TEAM FRAY NOTE - animation which plays upon a successful parry.\r\n\r\n//calls parry effect\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry_ring\", x:6, y:21}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry_dust_front\", x:6, y:21}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry\", layer:VfxLayer.CHARACTERS_BACK, x:6, y:21}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry_dust_back\", layer:VfxLayer.CHARACTERS_BACK, x:6, y:21}), self);\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: \"vfx_parry_dust_behind\", layer:VfxLayer.BACKGROUND_BEHIND}), self);",
       "length": 1,
       "pluginMetadata": {
       },

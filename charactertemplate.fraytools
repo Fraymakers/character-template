@@ -61,6 +61,6 @@
   "snapToPixel": true,
   "templateDescription": "Sample character project for Fraymakers.",
   "templateName": "Fraymakers Character Template",
-  "templateVersion": "0.2.0",
+  "templateVersion": "0.2.1",
   "version": 12
 }
