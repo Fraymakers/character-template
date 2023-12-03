@@ -7,7 +7,7 @@
 	// Note: Currently scale adjustments invalidate SpecialAngle AUTOLINK_STRONGER and AUTOLINK_STRONGEST for values other than 1.0. 
 	baseScaleX: 1.0,
 	baseScaleY: 1.0, 
-	weight: 85,
+	weight: 100,
 	gravity: 0.8,
 	shortHopSpeed: 8.25,
 	jumpSpeed: 15,
