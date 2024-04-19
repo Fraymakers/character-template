@@ -13576,7 +13576,7 @@
     },
     {
       "$id": "f5f29f65-db95-493b-940a-75902fca8743",
-      "code": "//plays generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);\r\n//updates the hitbox stats for hitbox0 (indicated by the 0 at the start of the parenthesis)\r\nself.updateHitboxStats(0, {damage: 1});\r\n//refreshes the hitboxes on the animation, allowing for multi-hit behavior\r\nself.reactivateHitboxes();\r\n",
+      "code": "//plays generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);\r\n//refreshes the hitboxes on the animation, allowing for multi-hit behavior\r\nself.reactivateHitboxes();\r\n",
       "length": 1,
       "pluginMetadata": {
       },
@@ -13640,7 +13640,7 @@
     },
     {
       "$id": "89764368-56fd-4c9c-ac17-6b9a8a9e047d",
-      "code": "//plays generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);\r\n//updates the hitbox stats for hitbox0 (indicated by the 0 at the start of the parenthesis)\r\nself.updateHitboxStats(0, {damage: 5, angle: 80, baseKnockback: 55, knockbackGrowth: 75, hitstop:-1, selfHitstop:-1});\r\n//refreshes the hitboxes on the animation, allowing for multi-hit behavior\r\nself.reactivateHitboxes();\r\n",
+      "code": "//plays generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);\r\n//updates the hitbox stats for hitbox0 (indicated by the 0 at the start of the parenthesis)\r\nself.updateHitboxStats(0, {damage: 5, angle: 80, baseKnockback: 55, knockbackGrowth: 75, hitstop:-1, selfHitstop:-1, hitstopNudgeMultiplier:1, knockbackCap:-1, tumbleType: TumbleType.AUTO});\r\n//refreshes the hitboxes on the animation, allowing for multi-hit behavior\r\nself.reactivateHitboxes();",
       "length": 1,
       "pluginMetadata": {
       },
