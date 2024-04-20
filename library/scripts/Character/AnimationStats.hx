@@ -33,6 +33,15 @@
 	airdash_forward_down: {},
 	airdash_back_up: {},
 	airdash_back_down: {},
+	// These animations refer to the special fall state a character enters after an airdash completes or an attack-canceled airdash that whiffs completes (respectively)
+	// Previously aerialSpeedCap was applied on these animations, causing the character to have much less air speed while in these animations compared to the character's typical air speed while in special fall
+	// If you would like to use the old aerialSpeedCap, simply uncomment the stat name and its value
+	airdash_freefall: {
+		//aerialSpeedCap:1.75
+	},
+	airdash_freefall_whiff: {
+		//aerialSpeedCap:1.75
+	},
 
 	//DEFENSE
 	shield_in: {},
