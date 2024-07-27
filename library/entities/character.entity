@@ -2178,8 +2178,8 @@
     },
     {
       "$id": "1a3fad43-50c2-4e1b-8b58-93be14177dce",
-      "code": "",
-      "length": 6,
+      "code": "enableClutchReversal();",
+      "length": 1,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -39024,8 +39024,8 @@
     },
     {
       "$id": "393ddd0b-9b74-4b49-95d6-18cf17eb7da9",
-      "code": "",
-      "length": 6,
+      "code": "enableClutchReversal();",
+      "length": 1,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -43213,6 +43213,30 @@
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "cd4bd63f-b0e5-4d4c-ab95-2fea6fd94528",
+      "code": null,
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "b07f3de6-1f46-4192-aa16-26e3110d257c",
+      "code": null,
+      "length": 5,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "b7d88f3e-b247-41f4-a6d7-0cf2d5ba62c3",
+      "code": "",
+      "length": 4,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
     }
   ],
   "layers": [
@@ -45916,6 +45940,8 @@
       "hidden": false,
       "keyframes": [
         "1a3fad43-50c2-4e1b-8b58-93be14177dce",
+        "cd4bd63f-b0e5-4d4c-ab95-2fea6fd94528",
+        "b7d88f3e-b247-41f4-a6d7-0cf2d5ba62c3",
         "bc6636a0-5ae8-4d36-9427-9c5c7c78b0b7",
         "99f77ccc-ad18-4a0b-893b-1279e455eead",
         "810f1404-b64f-4ff3-bc57-7c96fabb3bfa",
@@ -45936,6 +45962,7 @@
       "hidden": false,
       "keyframes": [
         "393ddd0b-9b74-4b49-95d6-18cf17eb7da9",
+        "b07f3de6-1f46-4192-aa16-26e3110d257c",
         "c87a8f88-4094-49c0-b9e5-64679b05ac49",
         "a94a6d9c-1510-4506-856b-da0c02961b8f",
         "4208cfae-f1e5-4d63-8c85-5f34f32e24c2",
