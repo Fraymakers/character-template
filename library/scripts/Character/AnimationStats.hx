@@ -97,14 +97,17 @@
 	special_neutral_air: {},
 	special_up: {leaveGroundCancel:false, xSpeedConservation:0.5, ySpeedConservation:0.5, allowMovement: true, groundSpeedCap: 5.5, aerialSpeedCap: 3.25, nextState:CState.FALL_SPECIAL}, 
 	special_up_air: {leaveGroundCancel:false, xSpeedConservation:0.5, ySpeedConservation:0.5, groundSpeedCap: 5.5, aerialSpeedCap: 3.25, nextState:CState.FALL_SPECIAL, landType:LandType.TOUCH}, 
-	special_side: {allowFastFall: false, allowTurnOnFirstFrame: true, leaveGroundCancel:false, landType:LandType.TOUCH, landAnimation: "land_heavy", singleUse:true},
-	special_side_air: {allowFastFall: false, allowTurnOnFirstFrame: true, leaveGroundCancel:false, landType:LandType.TOUCH, landAnimation: "land_heavy", singleUse:true}, 
 	special_down: {allowFastFall:false, allowTurnOnFirstFrame: true, leaveGroundCancel:false, xSpeedConservation:0, ySpeedConservation:0, gravityMultiplier:0.75}, 
 	special_down_loop: {endType:AnimationEndType.LOOP, allowJump:true},
 	special_down_endlag: {allowJump:true},
 	special_down_air: {allowFastFall:false, allowTurnOnFirstFrame: true, leaveGroundCancel:false, xSpeedConservation:0, ySpeedConservation:0, gravityMultiplier:0.75, landType:LandType.LINK_FRAMES, landAnimation:"special_down"},
 	special_down_air_loop: {endType:AnimationEndType.LOOP, allowJump:true, landType:LandType.LINK_FRAMES, landAnimation:"special_down_loop"},
 	special_down_air_endlag: {allowJump:true, landType:LandType.LINK_FRAMES, landAnimation:"special_down"},
+	special_side: {allowFastFall: false, allowTurnOnFirstFrame: true, leaveGroundCancel:false, landType:LandType.TOUCH, landAnimation: "land_heavy", singleUse:true},
+	special_side_air: {allowFastFall: false, allowTurnOnFirstFrame: true, leaveGroundCancel:false, landType:LandType.TOUCH, landAnimation: "land_heavy", singleUse:true}, 
+    //example of how to turn off armor color overlay using `bodyStatusShaderColor` below
+	//special_side: {bodyStatusShaderColor: 0x000000, allowFastFall: false, allowTurnOnFirstFrame: true, leaveGroundCancel:false, landType:LandType.TOUCH, landAnimation: "land_heavy", singleUse:true},
+	//special_side_air: {bodyStatusShaderColor: 0x000000, allowFastFall: false, allowTurnOnFirstFrame: true, leaveGroundCancel:false, landType:LandType.TOUCH, landAnimation: "land_heavy", singleUse:true}, 
 
 	//THROWS
 	grab: {},
