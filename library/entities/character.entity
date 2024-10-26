@@ -17138,7 +17138,7 @@
     },
     {
       "$id": "452e2e0d-59da-42bb-9ac7-912393f58839",
-      "code": "//updates the hitbox stats for hitbox0 (indicated by the 0 at the start of the parenthesis)\r\nself.updateHitboxStats(0, {angle: 35});\r\n",
+      "code": null,
       "length": 1,
       "pluginMetadata": {
       },
@@ -55769,7 +55769,7 @@
   "pluginMetadata": {
     "com.fraymakers.FraymakersMetadata": {
       "objectType": "CHARACTER",
-      "version": "0.3.0"
+      "version": "0.3.1"
     }
   },
   "plugins": [

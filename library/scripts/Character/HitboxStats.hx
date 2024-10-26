@@ -34,7 +34,7 @@
 		hitbox2: { damage: 12, knockbackGrowth: 80, baseKnockback: 65, hitstop: -1, selfHitstop:-1, hitstopOffset:3, selfHitstopOffset:3, angle: 90, limb:AttackLimb.FIST }
 	},
 	strong_down_attack: {
-		hitbox0: {damage: 13, angle: 70, baseKnockback: 65, knockbackGrowth: 80, hitstop: -1, selfHitstop:-1, limb:AttackLimb.BODY}
+		hitbox0: {damage: 7, angle: 270, baseKnockback: 65, knockbackGrowth: 80, hitstop: -1, selfHitstop:-1, buryType: BuryType.BURY, buryTimeBase: 30, buryTimeScaling: 1.5, limb:AttackLimb.BODY}
 	},
 
 	//AERIAL ATTACKS
@@ -106,7 +106,7 @@
 		hitbox1: { damage: 9, angle: 361, baseKnockback: 40, knockbackGrowth: 60, hitstop:-1, selfHitstop:-1, limb:AttackLimb.FOOT}
 	},
 	crash_attack: {
-		hitbox0: { damage: 6, angle: 145, baseKnockback: 70, knockbackGrowth: 25, hitstop: -1, selfHitstop:-1, reversibleAngle: false, limb:AttackLimb.FOOT }
+		hitbox0: { damage: 6, angle: 35, baseKnockback: 70, knockbackGrowth: 25, hitstop: -1, selfHitstop:-1, limb:AttackLimb.FOOT }
 	},
 	emote: {
 		hitbox0: {}
