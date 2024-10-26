@@ -71,6 +71,11 @@
 	airdashAccelMultiplier: 0.4,
 	airdashCancelSpeedConservation: 0.9,
 
+	//BURY VISUAL STATS
+	buryAnimation: "hurt_thrown",
+	buryFrame: 13,
+	buryOffsetY: -10,
+
 	//SHIELD STATS
 	//How many pixels behind 0,0 you'd like to extend shield coverage.
 	shieldCrossupThreshold: 16,	
