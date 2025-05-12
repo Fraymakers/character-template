@@ -6,7 +6,7 @@
 	stand: {},
 	stand_turn: {},
 	walk_in: {},
-	walk: {},
+	walk_loop: {},
 	walk_out: {},
 	dash: {},
 	run: {},

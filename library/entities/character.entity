@@ -385,18 +385,6 @@
       }
     },
     {
-      "$id": "7274efdf-b26d-487c-b1a0-2477250d8ff2",
-      "layers": [
-        "a629fb3f-bcbd-4f84-a96c-d845a8b9f32a",
-        "294a15dc-1936-42a8-ad45-4b06b92a19b6",
-        "c24ada8e-abc2-46ef-89e7-a1f9eed391f8",
-        "f2254ec8-5cef-4c91-be4f-6e7c00314052"
-      ],
-      "name": "ledge_climb_in",
-      "pluginMetadata": {
-      }
-    },
-    {
       "$id": "082e6d87-eb0b-492b-bf4f-1d6051207b44",
       "layers": [
         "9944b10c-5adf-4316-b58c-d959b949200a",
@@ -404,6 +392,18 @@
         "e07c5fc0-ad26-41a4-9b60-2c2e66fa13e0",
         "d12a0575-3270-4693-ae9f-12a9bae5fa2e",
         "db959686-af4b-4f64-9a45-7e3515905f84"
+      ],
+      "name": "ledge_climb_in",
+      "pluginMetadata": {
+      }
+    },
+    {
+      "$id": "7274efdf-b26d-487c-b1a0-2477250d8ff2",
+      "layers": [
+        "a629fb3f-bcbd-4f84-a96c-d845a8b9f32a",
+        "294a15dc-1936-42a8-ad45-4b06b92a19b6",
+        "c24ada8e-abc2-46ef-89e7-a1f9eed391f8",
+        "f2254ec8-5cef-4c91-be4f-6e7c00314052"
       ],
       "name": "ledge_climb",
       "pluginMetadata": {
