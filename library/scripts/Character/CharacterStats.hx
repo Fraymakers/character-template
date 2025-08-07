@@ -30,6 +30,10 @@
 	aerialSpeedAcceleration: 0.45,
 	aerialSpeedCap: 6.5,
 	aerialFriction: 0.22,
+
+	wallJumpXSpeed: 8.5,
+	wallJumpYSpeed: 14,
+	wallJumpLimit:1,
 	
 	//ENVIRONMENTAL COLLISION BODY (ECB) STATS
 	floorHeadPosition: 86,
